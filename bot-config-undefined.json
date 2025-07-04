@@ -1,0 +1,20 @@
+{
+  "nomer": "1",
+  "p1": [
+    5512, 
+	88, 
+	-4453
+  ],
+  "p2": [
+    5662, 
+	108, 
+	-4303
+  ],
+  "auto_place": "true",
+  "anti_spawn": "true",
+  "admin": "Umid",
+  "username": "FORTUNE",
+  "pswd": "umid8210",
+  "warp": "place",
+  "blockType": "emerald_block"
+}
