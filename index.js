@@ -1,3 +1,4 @@
+require('./keep_alive'); // Keep-alive serverni ishga tushirish
 const mineflayer = require('mineflayer');
 const Vec3 = require('vec3');
 const fs = require('fs');
