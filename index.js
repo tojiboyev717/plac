@@ -505,15 +505,20 @@ if (!currentBlockItem) {
         placementActive = false;
     });
 
-    bot.on('death', () => {
-        bot.chat("/back");
-        console.log("BOT O'LDI - qayta tiklash...".red);
-        // O'limdan keyin qayta boshlash
-        setTimeout(() => {
-            if (!placementActive) place();
-        }, 5000);
-    });
+    // O‘lishni kuzatish
+bot.on('death', () => {
+    // Bu yerda hech narsa yozish shart emas
+    // console.log("Bot o'ldi");
+});
 
+// Respawn bo‘lganda orqaga qaytish
+bot.on('respawn', () => {
+    bot.chat("/back");
+    // 5 soniya kutib keyin davom ettirish
+    setTimeout(() => {
+        if (!placementActive) place();
+    }, 5000);
+});
     bot.on('end', () => {
         placementActive = false;
         if (uzfine == "quit" || uzfine == "join") {
